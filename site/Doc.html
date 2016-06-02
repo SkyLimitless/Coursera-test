@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentation</title>
+	<style type="text/css">
+		body {
+			background-color: aqua
+		}
+
+		.heading {
+			color: #D13F31;
+			font-size: 40px;
+			font-weight: bold;
+			text-align: center;
+		}
+		#sub {
+			color: #1F7872;
+			font-size: 30px;
+			font-weight: bold;
+			text-align: left;
+			margin-top: 10px;
+		}
+		ul {
+			color: #D13F31;
+			font-size: 20px;
+			font-weight: normal;
+			font-family: Arial;
+		}
+		ol {
+			color: #505050;
+			font-size: 15px;
+			font-weight: normal;
+			font-family: Arial;
+		}
+	</style>
+</head>
+<body>
+	<div class = "heading"> Week 2 - Lesson 3 The Box Model and Layout
+		<div id = "sub"> Lecture 19 The Box Model
+			<ul>
+				<li>Content</li>
+				<li>Padding</li>
+					<ol>
+						<li>padding: 10px 10px 30px 10px <i>(TLBR</i>)</li>
+						<li>padding: 10px <i>(All sides</i>)</li>
+					</ol>
+				<li>border</li>
+					<ol>
+						<li>border: 20px Solid black;</li>
+					</ol>
+				<li>margin</li>
+					<ol>
+						<li>margin: 40px; <i>(All sides</i>)</li>
+					</ol>
+				<li>width</li>
+					<ol>
+						<li>width: 300px; &#13;&#10; box-sizing: border-box; &#13;&#10; <i>(This will define width for whole box including everyhting</i>)
+						</li>
+						<li>width: 300px; <i>(This will define width for content only</i>)
+						</li>
+					</ol>
+				<li>*{  }</li>
+					<ol>
+						<li>box-sizing: border-box; <i>(This will change to border box</i>)
+						</li>
+						<li>margin:0; <i>(This is use to override browser settings</i>)
+						</li>
+					</ol>
+				<li>Horizantal Margins are cumulative</li>
+				<li>Vertical margins are collapsing</li>
+				<li>Content Overflow</li>
+					<ol>
+						<li>overflow: visible <i>(It makes whole content visible irrespective of box size)</i></li>
+						<li>overflow: hidden <i>(It makes whole content clip outside the box)</i></li>
+						<li>overflow: scroll <i>(It makes whole content visible using both scroll bars)</i></li>
+						<li>overflow: auto <i>(It makes whole content visible using required scorll bar BEST PRACTICE)</i></li>
+					</ol>
+			</ul>
+		</div>
+		<div id = "sub">Lecture 20 The BackGround Property
+			<ul>
+				<li>Color</li>
+					<ol>
+						<li>background-color: blue; <i>(It sets background color of text or element to solid blue)</i></li>
+					</ol>
+				<li>Image <i>(Image has higher priority than color)</i></li>
+					<ol>
+						<li>background-image: url("RELATIVETO_CSS") <i>(This will set image as a background with repated image)</i></li>
+						<li>background-repeat: repeat; <i>(This is set by default it will repeat an image)</i></li>
+						<li>background-repeat: repeat-x;</li>
+						<li>background-repeat: repeat-y;</li>
+						<li>background-repeat: no-repeat;</li>
+						<li>background-position: bottom<i>(Align bottom and center)</i></li>
+						<li>background-position: left<i>(Align left and center)</i></li>
+						<li>background-position: right bottom</li>
+						<li>background-position: left top</li>
+					</ol>
+				<li>Whole background with no dash</li>
+					<ol>
+						<li>background: url <i>(It will override the whole background) of BgColor)</i></li>
+						<li>background: url('yaakov.png') no-repeat top center blue; <i>(It will set image as background not repeating and blue color for portion which is not covered image)</i></li>
+					</ol>
+			</ul>
+		</div>
+		<div id = "sub">Lecture 21 Positioning Elements by Floating
+			<ul>
+			<li>Float <i>It removes the element from the structure</i></li>
+					<ol>
+						<li>float: right;<i>(Float it to the right. For floated element margins never collapse)</i></li>
+						<li>clear: left; <i>(Make sures there is no overlapping similarly for right and both)</i></li>
+					</ol>
+			</ul>
+		</div>
+		<div id = "sub">Lecture 22 Relative and Absolute positioning
+			<ul>
+			<li>Relative <i>In this original position is anchored and relative position is carried out with respect to it</i></li>
+					<ol>
+						<li>position:  relative; &#13;&#10; top: 50px; &#13;&#10; left: 50px;&#13;&#10 <i>(sets position of an elemnt relative to original by 50px, 50px)</i></li>
+					</ol>
+			<li>Absolute <i>It takes out the element from the structure and place it at absolute position</i></li>
+				<ol>
+						<li>position:  absolute; &#13;&#10; top: 50px; &#13;&#10; left: 50px;&#13;&#10 <i>(sets position of an elemnt relative to container by 50px, 50px)</i></li>
+					</ol>	
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
